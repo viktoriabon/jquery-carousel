@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery карусель</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
+		<div class="wrapper clearfix">
+			<svg class="carousel-arrow-left" width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		      <g id="prev" transform="translate(8.500000, 8.500000) scale(-1, 1) translate(-8.500000, -8.500000)">
+		          <polygon class="arrow" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+		          <polygon class="arrow-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+		          <path d="M-1.48029737e-15,0.56157424 L-1.48029737e-15,16.1929159 L9.708,8.33860465 L-2.66453526e-15,0.56157424 L-1.48029737e-15,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+		      </g>
+		  	</svg>
+			<div class="carousel-hider">
+				<ul class="carousel-list">
+					<li class="carousel-element">
+						<img src="images/8146006500_2_3_1.jpg" alt="ЖАККАРДОВАЯ ЮБКА, LIMITED EDITION">
+						<p>ЖАККАРДОВАЯ ЮБКА, LIMITED EDITION</p>
+					</li>
+					<li class="carousel-element">
+						<img src="images/0387060851_1_1_1.jpg" alt="ЮБКА-КАРАНДАШ С ПАЙЕТКАМИ">
+						<p>ЮБКА-КАРАНДАШ С ПАЙЕТКАМИ</p>
+					</li>
+					<li class="carousel-element">
+						<img src="images/2271687044_2_3_1.jpg" alt="МИНИ-ЮБКА С ПУГОВИЦАМИ">
+						<p>МИНИ-ЮБКА С ПУГОВИЦАМИ</p>
+					</li>
+					<li class="carousel-element">
+						<img src="images/2812250250_2_1_1.jpg" alt="ЮБКА-ШОРТЫ С ПОЯСОМ">
+						<p>ЮБКА-ШОРТЫ С ПОЯСОМ</p>
+					</li>
+					<li class="carousel-element">
+						<img src="images/2878170808_2_2_1.jpg" alt="МИНИ-ЮБКА С БЛЕСТКАМИ">
+						<p>МИНИ-ЮБКА С БЛЕСТКАМИ</p>
+					</li>
+					<li class="carousel-element">
+						<img src="images/4979024406_2_1_1.jpg" alt="ДЖИНСОВАЯ ЮБКА Z1975 С ПОЯСОМ">
+						<p>ДЖИНСОВАЯ ЮБКА Z1975 С ПОЯСОМ</p>
+					</li>
+					<li class="carousel-element">
+						<img src="images/5216046600_1_1_1.jpg" alt="ЮБКА С КОНТРАСТНОЙ СТРОЧКОЙ">
+						<p>ЮБКА С КОНТРАСТНОЙ СТРОЧКОЙ</p>
+					</li>
+					<li class="carousel-element">
+						<img src="images/5580266629_1_1_1.jpg" alt="МИНИ-ЮБКА ИЗ ИСКУССТВЕННОЙ ЗАМШИ">
+						<p>МИНИ-ЮБКА ИЗ ИСКУССТВЕННОЙ ЗАМШИ</p>
+					</li>
+					<li class="carousel-element">
+						<img src="images/5862084250_2_3_1.jpg" alt="ДЖИНСОВАЯ МИНИ-ЮБКА Z1975">
+						<p>ДЖИНСОВАЯ МИНИ-ЮБКА Z1975</p>
+					</li>
+					<li class="carousel-element">
+						<img src="images/5862093800_2_2_1.jpg" alt="МИНИ-ЮБКА Z1975 С ПОЛОСАМИ С БОКОВЫХ СТОРОН">
+						<p>МИНИ-ЮБКА Z1975 С ПОЛОСАМИ С БОКОВЫХ СТОРОН</p>
+					</li>
+					<li class="carousel-element">
+						<img src="images/6840068400_2_2_1.jpg" alt="ДЖИНСОВАЯ МИНИ-ЮБКА С РАЗРЫВАМИ">
+						<p>ДЖИНСОВАЯ МИНИ-ЮБКА С РАЗРЫВАМИ</p>
+					</li>
+					<li class="carousel-element">
+						<img src="images/0387058800_1_1_1.jpg" alt="МИНИ-ЮБКА СО СТРОЧКОЙ">
+						<p>МИНИ-ЮБКА СО СТРОЧКОЙ</p>
+					</li>
+				</ul>
+			</div>
+			<svg class="carousel-arrow-right" width="18px" height="17px" viewBox="-1 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	      		<g>
+	         		<polygon class="arrow" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+	          		<polygon class="arrow-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+	          		<path d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+	      		</g>
+	  		</svg>
+		</div>
+	</body>
+</html>
